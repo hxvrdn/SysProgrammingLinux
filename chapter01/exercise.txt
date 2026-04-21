@@ -1,0 +1,31 @@
+Exercises
+1. Who are the authors of the bash shell? (Hint: Use the man pages to
+find out.)
+-> AUTHORS
+          Brian Fox, Free Software Foundation
+          bfox@gnu.org
+
+          Chet Ramey, Case Western Reserve University
+          chet.ramey@case.edu
+
+2. What is the return type of the read() system call?
+-> ssize_t
+
+3. Using the man pages, find the names of all of the header files that
+you would need to include to use the following functions in a program. There might be more than one needed for some of these.
+(a) _exit()
+->  #include <unistd.h>
+
+(b) setuid()
+->  #include <unistd.h>
+
+(c) fstat()
+->  #include <sys/stat.h>
+
+4. If your current working directory is /usr/share/gcc/python, what is the
+shortest relative pathname of the file /usr/lib32/libc.so.6?
+->   ../../../lib32/libc.so.6
+
+5. What command can be used to print the creation date of a file?
+(Hint: This information is part of a file’s status.)
+-> stat -c %w filename
